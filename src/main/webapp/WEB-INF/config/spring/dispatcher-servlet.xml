@@ -8,11 +8,16 @@
 				http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="me.hyuck"/>
+    <context:component-scan base-package="me.hyuck.hyuckweb"/>
 <!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />-->
-<!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service" />-->
-<!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository" />-->
-<!--    </context:component-scan>-->
+    <!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service" />-->
+    <!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository" />-->
+    <!--    </context:component-scan>-->
+
+<!--    <mvc:resources mapping="/resources/**" location="/resources/" />-->
+<!--    <mvc:resources mapping="/js/**" location="/js/" />-->
+<!--    <mvc:resources mapping="/css/**" location="/css/" />-->
+<!--    <mvc:default-servlet-handler />-->
 
 
     <!-- json View -->
@@ -48,5 +53,6 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
+
 
 </beans>
