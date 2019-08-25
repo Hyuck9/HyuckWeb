@@ -1,15 +1,13 @@
-package me.hyuck.account.controller;
+package me.hyuck.hyuckweb.account.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import me.hyuck.hyuckweb.mapper.mariadb.MariaMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 @Slf4j
@@ -17,6 +15,12 @@ import java.util.Locale;
 @RequestMapping("/login")
 @Transactional
 public class LoginController {
+
+	private final MariaMapper mariaMapper;
+
+	public LoginController(MariaMapper mariaMapper) {
+		this.mariaMapper = mariaMapper;
+	}
 
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -26,9 +30,11 @@ public class LoginController {
 		log.info("Welcome home! The client locale is {}.", locale);
 
 
-		String formattedDate = LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE);
+//		String formattedDate = LocalDateTime.now().format(DateTimeFormatter.BASIC_ISO_DATE);
 
-		model.addAttribute("serverTime", formattedDate );
+//		model.addAttribute("serverTime", formattedDate );
+
+		model.addAttribute("serverTime", mariaMapper.getNow() );
 
 		return "login/loginForm";
 	}
