@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta http-equiv="refresh" content="0; url=${pageContext.request.contextPath}/login/test.do">
+    <meta http-equiv="refresh" content="0; url=${pageContext.request.contextPath}/login/loginForm.do">
     <title>Hyuck Web</title>
 </head>
 <body>
