@@ -46,4 +46,16 @@ public class LoginController {
 		return "/login/loginForm.loginTpl";
 	}
 
+	@GetMapping(value = "/joinForm.do")
+	public String joinForm(Model model) {
+		model.addAttribute("title", "회원가입");
+		return "/login/joinForm.loginTpl";
+	}
+
+	@GetMapping(value = "/forgotPassword.do")
+	public String forgotPassword(Model model) {
+		model.addAttribute("title", "비밀번호 찾기");
+		return "/login/forgotPassword.loginTpl";
+	}
+
 }

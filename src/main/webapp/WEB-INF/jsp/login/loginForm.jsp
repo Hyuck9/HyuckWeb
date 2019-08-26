@@ -9,11 +9,11 @@
 			<div class="card-body p-0">
 				<!-- Nested Row within Card Body -->
 				<div class="row">
-					<div class="col-lg-6 d-none d-lg-block custom-bg-image"></div>
+					<div class="col-lg-6 d-none d-lg-block custom-bg-login"></div>
 					<div class="col-lg-6">
 						<div class="p-5">
 							<div class="text-center">
-								<h1 class="h4 text-gray-900 mb-4">Hyuck Web</h1>
+								<h1 class="h4 text-gray-900 mb-4">로그인</h1>
 							</div>
 							<form class="user">
 								<div class="form-group">
@@ -41,10 +41,10 @@
 							</form>
 							<hr>
 							<div class="text-center">
-								<a class="small" href="forgot-password.html">Forgot Password?</a>
+								<a class="small" href="${pageContext.request.contextPath}/login/forgotPassword.do">Forgot Password?</a>
 							</div>
 							<div class="text-center">
-								<a class="small" href="register.html">Create an Account!</a>
+								<a class="small" href="${pageContext.request.contextPath}/login/joinForm.do">Create an Account!</a>
 							</div>
 						</div>
 					</div>
