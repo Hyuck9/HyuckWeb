@@ -1,4 +1,4 @@
-package me.hyuck.hyuckweb.account.controller;
+package me.hyuck.hyuckweb.account.web;
 
 import lombok.extern.slf4j.Slf4j;
 import me.hyuck.hyuckweb.mapper.mariadb.MariaMapper;
