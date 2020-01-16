@@ -28,16 +28,10 @@
 										<label class="custom-control-label" for="customCheck">Remember Me</label>
 									</div>
 								</div>
-								<a href="${pageContext.request.contextPath}/main/dashboard.do" class="btn btn-primary btn-user btn-block">
-									Login
-								</a>
+								<button type="button" class="btn btn-primary btn-user btn-block" onclick="getLogin();">로그인</button>
 								<hr>
-								<a href="${pageContext.request.contextPath}/main/dashboard.do" class="btn btn-google btn-user btn-block">
-									<i class="fab fa-google fa-fw"></i> Login with Google
-								</a>
-								<a href="${pageContext.request.contextPath}/main/dashboard.do" class="btn btn-facebook btn-user btn-block">
-									<i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-								</a>
+								<button type="button" class="btn btn-google btn-user btn-block" onclick="getLogin();"><i class="fab fa-google fa-fw"></i> Login with Google</button>
+								<button type="button" class="btn btn-facebook btn-user btn-block" onclick="getLogin();"><i class="fab fa-facebook-f fa-fw"></i> Login with Facebook</button>
 							</form>
 							<hr>
 							<div class="text-center">
@@ -55,3 +49,9 @@
 	</div>
 
 </div>
+
+<script>
+	function getLogin() {
+		location.href = contextPath + "/main/dashboard.do";
+	}
+</script>

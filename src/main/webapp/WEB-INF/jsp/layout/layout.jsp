@@ -11,12 +11,15 @@
 	<!-- Page Wrapper -->
 	<div id="wrapper">
 		<tiles:insertAttribute name="leftMenu" />
+		<%-- Loading --%>
 <%--		<div id="loading" class="custom-loading">--%>
 <%--			<div class="text-center">--%>
 <%--				<img src="${pageContext.request.contextPath}/resources/img/loading_gear.svg" alt="loading..." style="width:250px;margin-top:10%;"/>--%>
 <%--				<br><span class="h2 text-white">Loading...</span>--%>
 <%--			</div>--%>
 <%--		</div>--%>
+		<%-- End of Loading --%>
+
 		<!-- Content Wrapper -->
 		<div id="content-wrapper" class="d-flex flex-column">
 
@@ -37,7 +40,8 @@
 
 	<%-- Scroll to Top Button--%>
 	<a class="scroll-to-top rounded" href="#page-top">
-		<i class="material-icons mt-2">&#xe5d8;</i>
+		<i class="fas fa-angle-up"></i>
+		<%--<i class="material-icons mt-2">&#xe5d8;</i>--%>
 	</a>
 	<tiles:insertAttribute name="footer" />
 </body>

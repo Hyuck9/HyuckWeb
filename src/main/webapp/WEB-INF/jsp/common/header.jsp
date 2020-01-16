@@ -9,3 +9,8 @@
 
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/sb-admin-2.min.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/common.css?v=20190715">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fullcalendar/core/main.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fullcalendar/daygrid/main.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fullcalendar/timegrid/main.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fullcalendar/list/main.css">

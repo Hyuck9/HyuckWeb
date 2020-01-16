@@ -23,7 +23,7 @@ public class MainController {
 //            return "/login/loginForm.loginTpl";
 //        } else {
             model.addAttribute("title", "고객 관리");
-            return "/main.defaultTpl";
+            return "/main/main.defaultTpl";
 //        }
     }
 }
