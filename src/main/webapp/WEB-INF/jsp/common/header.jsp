@@ -7,5 +7,5 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/sb-admin-2.min.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/common.css?v=20190715">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/sb-admin-2.min.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/common.css?v=20190715">

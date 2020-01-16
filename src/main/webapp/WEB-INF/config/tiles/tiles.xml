@@ -7,7 +7,7 @@
 
 	<!-- 기본 레이아웃 -->
 	<definition name="defaultTpl" template="/WEB-INF/jsp/layout/layout.jsp">
-        <put-attribute name="title" value="인증서 관리시스템" />
+        <put-attribute name="title" value="HyuckWeb" />
         <put-attribute name="header" value="/WEB-INF/jsp/common/header.jsp" />
         <put-attribute name="leftMenu" value="/WEB-INF/jsp/common/leftMenu.jsp" />
         <put-attribute name="topMenu" value="/WEB-INF/jsp/common/topMenu.jsp" />
@@ -17,16 +17,6 @@
         <put-attribute name="title" expression="${title}" />
         <put-attribute name="content"  value="/WEB-INF/jsp/{1}.jsp" />
     </definition>
-    
-    <!-- 팝업 레이아웃 -->
-<!--    <definition name="popupTpl" template="/WEB-INF/jsp/layout/popup_layout.jsp">-->
-<!--        <put-attribute name="title" value="Datainfo 관리시스템" />-->
-<!--        <put-attribute name="header" value="/WEB-INF/jsp/comm/header.jsp" />-->
-<!--    </definition>-->
-<!--    <definition name="REGEXP:(.*)\.popupTpl" extends="popupTpl">-->
-<!--        <put-attribute name="title" expression="${title}" />-->
-<!--        <put-attribute name="content"  value="/WEB-INF/jsp/{1}.jsp" />-->
-<!--    </definition>-->
     
     <!-- 로그인 레이아웃 -->
      <definition name="loginTpl" template="/WEB-INF/jsp/layout/login_layout.jsp">
@@ -39,15 +29,5 @@
         <put-attribute name="content"  value="/WEB-INF/jsp/{1}.jsp" />
     </definition>
     
-    <!-- 모바일 레이아웃 -->
-<!--    <definition name="mobileTpl" template="/WEB-INF/jsp/layout/mobile_layout.jsp">-->
-<!--        <put-attribute name="title" value="Datainfo 관리시스템" />-->
-<!--        <put-attribute name="header" value="/WEB-INF/jsp/comm/mobile_header.jsp" />-->
-<!--        <put-attribute name="footer" value="/WEB-INF/jsp/comm/mobile_footer.jsp" />-->
-<!--    </definition>-->
-<!--    <definition name="REGEXP:(.*)\.mobileTpl" extends="mobileTpl">-->
-<!--        <put-attribute name="title" expression="${title}" />-->
-<!--        <put-attribute name="content"  value="/WEB-INF/jsp/{1}.jsp" />-->
-<!--    </definition>-->
-	
+
 </tiles-definitions>

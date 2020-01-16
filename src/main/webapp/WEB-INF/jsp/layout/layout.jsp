@@ -13,7 +13,7 @@
 		<tiles:insertAttribute name="leftMenu" />
 <%--		<div id="loading" class="custom-loading">--%>
 <%--			<div class="text-center">--%>
-<%--				<img src="${pageContext.request.contextPath}/img/loading_gear.svg" alt="loading..." style="width:250px;margin-top:10%;"/>--%>
+<%--				<img src="${pageContext.request.contextPath}/resources/img/loading_gear.svg" alt="loading..." style="width:250px;margin-top:10%;"/>--%>
 <%--				<br><span class="h2 text-white">Loading...</span>--%>
 <%--			</div>--%>
 <%--		</div>--%>

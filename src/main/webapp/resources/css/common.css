@@ -1,0 +1,5 @@
+.custom-bg-login{background-image:url(/resources/img/login_main.jpg);background-position:center;background-size:cover;}
+.custom-bg-join{background-image:url(/resources/img/join_main.jpg);background-position:center;background-size:cover;}
+.custom-bg-password{background-image:url(/resources/img/password_main.jpg);background-position:center;background-size:cover;}
+.custom-loading{display:none;position:absolute;top:0px;left:0;right:0;bottom:0;background-color:#000;opacity:0.5;z-index:90;filter:alpha(opacity=50);}
+.custom-logo{position:absolute;top:20px;left:40px;padding:20px 0 0 40px;}

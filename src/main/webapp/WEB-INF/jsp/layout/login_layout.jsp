@@ -22,7 +22,7 @@
 <%--			</div>--%>
 <%--		</div>--%>
 		<h1 class="custom-logo">
-			<img src="${pageContext.request.contextPath}/img/sb_logo.png" alt="STAY BEAUTY"/>
+			<img src="${pageContext.request.contextPath}/resources/img/sb_logo.png" alt="STAY BEAUTY"/>
 		</h1>
 		<div class="container">
 			<tiles:insertAttribute name="content" />

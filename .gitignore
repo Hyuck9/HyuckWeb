@@ -1,2 +1,11 @@
 # Project exclude paths
 /target/
+/.idea/.gitignore
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/HyuckWeb.iml
+/.idea/libraries/
+/.idea/

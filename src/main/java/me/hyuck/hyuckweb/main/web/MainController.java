@@ -4,8 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpSession;
 
@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
 public class MainController {
 
 
-    @GetMapping(value = "/dashboard.do")
+    @RequestMapping(value = "/dashboard.do", method = { RequestMethod.GET, RequestMethod.POST })
     public String main(HttpSession hs, Model model) {
 //        if (hs.getAttribute("userId") == null) {
 //            model.addAttribute("title", "로그인");
