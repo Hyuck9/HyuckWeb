@@ -14,3 +14,6 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fullcalendar/daygrid/main.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fullcalendar/timegrid/main.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/fullcalendar/list/main.css">
+<script>
+    const contextPath = "${pageContext.request.contextPath}";
+</script>
